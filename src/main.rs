@@ -10,10 +10,10 @@ struct Args {
     #[clap(default_value = ".")]
     root: String,
     /// Set the listener host
-    #[clap(short = 'H', long, default_value = "0.0.0.0")]
+    #[clap(short = 'H', long, default_value = "127.0.0.1")]
     host: String,
     /// Set the listener port
-    #[clap(short, long, default_value = "0")]
+    #[clap(short, long, default_value = "3000")]
     port: u16,
     /// Open the page in browser automatically
     #[clap(short, long, value_name = "PAGE")]
